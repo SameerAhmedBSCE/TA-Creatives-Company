@@ -1,0 +1,43 @@
+.video-slider {
+  position: relative;
+  border-radius: 10px; /* Apply border radius to the slider container */
+  overflow: hidden; /* Ensure content respects the rounded corners */
+  background-color: rgb(16 21 26);
+}
+
+.video-slider .slick-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px; /* Apply border radius to each slide */
+  overflow: hidden; /* Ensure slide content respects the rounded corners */
+}
+
+.video-slider video {
+  border-radius: 50px; /* Apply border radius to video */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.video-slider .slick-dots {
+  bottom: 10px;
+}
+
+.video-slider .slick-dots li button:before {
+  color: #fff; /* Change dots color to white */
+}
+
+.video-slider .slick-prev,
+.video-slider .slick-next {
+  color: #fff; /* Arrow color */
+  z-index: 1; /* Ensure arrows are above other content */
+}
+
+.video-slider .slick-prev {
+  left: 40px; /* Adjust position to be within slider */
+}
+
+.video-slider .slick-next {
+  right: 40px; /* Adjust position to be within slider */
+}

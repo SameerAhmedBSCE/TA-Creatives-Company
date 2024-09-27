@@ -1,0 +1,80 @@
+.po_items_ho {
+    column-width: 15em; /* Set column width for multi-column layout */
+    column-gap: 4rem; /* Space between columns */
+    display: flex; /* Use flexbox for better alignment */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Center items */
+}
+
+.po_item {
+    display: inline-block;
+    width: 250px; /* Fixed width for uniformity */
+    text-align: center;
+    margin: 1rem; /* Space between items */
+    position: relative;
+    background: var(--secondary-color); /* Background color */
+    padding: 6px; /* Padding inside the card */
+    border: 2px solid white; /* White border */
+    border-radius: 8px; /* Rounded corners */
+    transition: 0.3s ease; /* Smooth transition */
+    min-height: 300px; /* Minimum height for cards */
+}
+
+.po_item img {
+    max-width: 100%;
+    height: 150px; /* Fixed height for uniformity */
+    object-fit: cover; /* Cover the area without distortion */
+    border-radius: 4px; /* Slight rounding for images */
+}
+
+.po_item .content {
+    position: absolute;
+    top: 0; /* Position to cover the entire card */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    color: white; /* White text for contrast */
+    z-index: 1;
+    display: flex; /* Flexbox for centering content */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0; /* Start as invisible */
+    transition: opacity 0.3s ease; /* Fade effect */
+}
+
+.po_item:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25); /* Shadow on hover */
+}
+
+.po_item:hover .content {
+    opacity: 1; /* Show content on hover */
+}
+
+.po_item .content a {
+    background: var(--bg-color); /* Background for link */
+    color: var(--text-color); /* Text color */
+    border: solid 1px var(--text-color); /* Border around link */
+    padding: 4px 8px; /* Padding inside link */
+    text-align: center;
+    font-size: 1rem; /* Font size */
+    border-radius: 4px; /* Rounded button */
+    transition: background 0.3s; /* Smooth transition */
+}
+
+.po_item .content a:hover {
+    background: rgba(255, 255, 255, 0.8); /* Lighter background on hover */
+    text-decoration: none; /* No underline */
+}
+
+.portfolio-page {
+    padding: 2rem; /* Padding around the portfolio page */
+    background-color: rgb(16, 21, 26); /* Dark background */
+    color: white; /* Light text color */
+}
+
+.portfolio-page h1 {
+    text-align: center; /* Center heading */
+    margin-bottom: 2rem; /* Space below heading */
+}

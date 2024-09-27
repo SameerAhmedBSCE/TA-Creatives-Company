@@ -1,0 +1,10 @@
+/* Apply custom styles to center the cards within the row */
+.row.gy-4 {
+    display: flex;
+    flex-wrap: wrap; /* Ensure items do not wrap to the next line */
+    justify-content: center; /* Center the cards horizontally */
+    row-gap: 67px;
+    column-gap: 186px;
+}
+
+/* You can adjust the width or other styles here if needed */
