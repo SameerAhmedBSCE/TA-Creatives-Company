@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-
+import Shopify from "../assets/Shopify.jpg";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -171,35 +171,31 @@ const dataportfolio = [
 ];
 
 
+
 export const Portfolio = () => {
   return (
-    <HelmetProvider>
-      <Container className="About-header">
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title>Portfolio | My Projects</title>
-          <meta name="description" content="A collection of my projects." />
-        </Helmet>
-        <Row className="mb-5 mt-3 pt-md-3">
-          <Col lg="8" className="mx-auto text-center">
-            <h1 className="display-4 mb-4">Portfolio</h1>
-            <hr className="t_border my-4 ml-0 text-left" />
-          </Col>
-        </Row>
-        <div className="mb-5 po_items_ho ">
-          {dataportfolio.map((data, i) => (
-            <div key={i} className="po_item">
-              <img src={data.img} alt={data.description} />
-              <div className="content">
-                <p>{data.description}</p>
-                <a href={data.link} target="_blank" rel="noopener noreferrer">
-                  View Project
-                </a>
+    <>
+      {/* Banner Image */}
+      <div className="relative w-full h-80">
+        <img src={Shopify} alt="Shopify Banner" className="object-cover w-full h-full" />
+      </div>
+
+     
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-5">
+            {dataportfolio.map((data, i) => (
+              <div key={i} className="po_item bg-white shadow-md rounded-lg p-5 hover:shadow-lg transition-shadow">
+                <img src={data.img} alt={data.description} className="w-full h-48 object-cover rounded-t-lg" />
+                <div className="content mt-3">
+                  <p className="text-lg">{data.description}</p>
+                  <a href={data.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">
+                    View Project
+                  </a>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </Container>
-    </HelmetProvider>
+            ))}
+          </div>
+       
+     
+    </>
   );
 };

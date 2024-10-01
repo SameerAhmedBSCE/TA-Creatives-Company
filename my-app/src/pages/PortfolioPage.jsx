@@ -5,17 +5,15 @@ import { Container } from "react-bootstrap";
 
 const PortfolioPage = () => {
   return (
+    <div className="flex justify-center items-center min-h-screen text-center">
     <HelmetProvider>
-      <Container className="portfolio-page">
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title>My Portfolio</title>
-          <meta name="description" content="A collection of my projects." />
-        </Helmet>
+      <Container className="portfolio-page ">
+       
         <h1 className="display-4 mb-4 text-center">My Portfolio</h1>
         <Portfolio />
       </Container>
     </HelmetProvider>
+    </div>
   );
 };
 

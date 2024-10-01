@@ -1,9 +1,11 @@
 import React from 'react';
-import AboutUsComponent from '../components/AboutUsComponent';
+import AboutUsComponent from '../components/About Us/AboutUsComponent';
 
 const About = () => {
   return (
-    <AboutUsComponent />
+    <div className="flex justify-center items-center min-h-screen text-center">
+      <AboutUsComponent />
+    </div>
   );
 }
 
