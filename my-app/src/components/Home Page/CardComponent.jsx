@@ -1,6 +1,6 @@
 import React from 'react';
 import './CardComponent.css';
-import videoSrc from "../../assets/intro.mp4";
+import videoSrc from "../../assets/Intro.mp4";
 const CardComponent = () => {
   const cards = [
     {
