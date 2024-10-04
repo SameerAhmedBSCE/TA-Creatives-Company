@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-import Shopify from "../assets/Shopify.jpg";
+// import Shopify from "../assets/Shopify.jpg";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import ClimbWild from '../assets/SVG/ClimbWild.svg';
@@ -181,10 +181,10 @@ const dataportfolio = [
 export const Portfolio = () => {
   return (
     <>
-      {/* Banner Image */}
+      {/* Banner Image
       <div className="relative w-full h-80">
         <img src={Shopify} alt="Shopify Banner" className="object-cover w-full h-full" />
-      </div>
+      </div> */}
 
      
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-5">
