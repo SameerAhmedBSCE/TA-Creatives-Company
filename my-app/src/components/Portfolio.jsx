@@ -3,13 +3,19 @@ import "./styles.css";
 import Shopify from "../assets/Shopify.jpg";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
+import ClimbWild from '../assets/SVG/ClimbWild.svg';
+import ColoradoCraft from '../assets/SVG/ColoradoCraft.svg';
+import Skarsgardfarms from '../assets/SVG/Skarsgardfarms.svg';
+import ZiradLabs from '../assets/SVG/ZiradLabs.svg';
+
+
 
 const dataportfolio = [
-  {
-    img: ". GongsMarket_logo.png",
-    description: "Gongs Market - Your one-stop shop for fresh produce.",
-    link: "https://www.gongsmarket.com/",
-  },
+  // {
+  //   img: Asset4,
+  //   description: "Gongs Market - Your one-stop shop for fresh produce.",
+  //   link: "https://www.gongsmarket.com/",
+  // },
   {
     img: " src/assets/shopify/crosvickfarms_logo.avif",
     description: "Creswick Farms - Fresh local produce and meats.",
@@ -31,7 +37,7 @@ const dataportfolio = [
     link: "https://foodandmeatcoop.com/",
   },
   {
-    img: "https://coloradocraftbeef.com/cdn/shop/files/Steer_Head_Middle_BW.png?v=1725290917&width=120",
+    img: ColoradoCraft,
     description: "Colorado Craft Beef - Premium beef products.",
     link: "https://coloradocraftbeef.com",
   },
@@ -51,7 +57,7 @@ const dataportfolio = [
     link: "https://farmstead-wine.myshopify.com",
   },
   {
-    img: "https://skarsgardfarms.myshopify.com/cdn/shop/files/skarsgard_logo.png?v=1710271181&width=500",
+    img: Skarsgardfarms,
     description: "Skarsgard Farms - Sustainable farming products.",
     link: "https://skarsgardfarms.myshopify.com/",
   },
@@ -137,7 +143,7 @@ const dataportfolio = [
     link: "https://carve1sports.com/",
   },
   {
-    img: "https://climbwild.shop/cdn/shop/files/Shopify.jpg?v=1711011039&width=300",
+    img: ClimbWild,
     description: "Climb Wild - Climbing gear and accessories.",
     link: "https://climbwild.shop/",
   },
@@ -148,7 +154,7 @@ const dataportfolio = [
     link: "https://benboulter.com",
   },
   {
-    img: "https://www.zirad.com/wp-content/uploads/2024/03/Normal_Zirad.com_with-Register_Plain_Text-Only-1.jpg",
+    img: ZiradLabs,
     description: "Zirad Labs - Advanced technological solutions.",
     link: "https://zirad.com",
   },
